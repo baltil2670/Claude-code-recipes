@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-2.1+-purple)](https://code.claude.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/SrinivasBathula9/prod-ready-claude-code-recipes?style=social)](https://github.com/SrinivasBathula9/prod-ready-claude-code-recipes/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/SrinivasBathula9/Claude-code-recipes?style=social)](https://github.com/SrinivasBathula9/Claude-code-recipes/stargazers)
 
 **10 battle-tested Claude Code workflows — each installs in one command, runs in 30 seconds, and is proven in enterprise environments (Government, BFSI, Healthcare).**
 
@@ -21,8 +21,8 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/SrinivasBathula9/prod-ready-claude-code-recipes.git
-cd prod-ready-claude-code-recipes
+git clone https://github.com/SrinivasBathula9/Claude-code-recipes.git
+cd Claude-code-recipes
 
 # Install any recipe into your project with one command
 ./install.sh pr-guardian /path/to/your-project
